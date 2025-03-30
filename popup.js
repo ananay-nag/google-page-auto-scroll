@@ -16,6 +16,10 @@ document.getElementById("startScroll").addEventListener("click", () => {
           }
 
           requestAnimationFrame(smoothScroll);
+
+          document.addEventListener('click', ()=> {
+            window.isScrolling = false;
+          });
         }
       }
     });
