@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Auto Scroll Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+            height: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+        .action-image {
+            width: 35px;
+        }
+    </style>
+</head>
+<body style="height:fit-content">
+
+    <div class="button-container">
+        <button id="increaseSpeed"><img src="/images/add.png" class="action-image" /> </button>
+        <button id="startScroll"><img src="/images/play-button.png" class="action-image"/> </button>
+        <button id="stopScroll"><img src="/images/pause.png" class="action-image"/> </button>
+        <button id="decreaseSpeed"><img src="/images/minus.png" class="action-image" />  </button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
